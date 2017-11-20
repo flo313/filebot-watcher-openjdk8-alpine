@@ -48,7 +48,7 @@ esac
 
 exit $RETVAL
 ```
-# /data/muttrc content
+# /config/muttrc content
 Here is the mutt configuration file used to allow mail notification.
 Info: The line "to=" isn't a mutt directive but it is used to define 
 the recipient of the mail.
