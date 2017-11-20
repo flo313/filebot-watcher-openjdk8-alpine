@@ -10,8 +10,11 @@ ENV FILEBOT_VER="4.7.9" \
     OUTPUT_DIR="/output"
 
 # Install bash inotify-tools mediainfo mutt procps grep
-RUN apk add --no-cache \
+RUN 	echo http://dl-cdn.alpinelinux.org/alpine/edge/main>>/etc/apk/repositories && \ 
+	echo http://dl-cdn.alpinelinux.org/alpine/edge/community>>/etc/apk/repositories && \
+	apk add --no-cache \
 		bash \
+		mediainfo \
 		inotify-tools \
 		mutt \
 		procps \
